@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science and Engineering | FISAT</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6; color: #243047; background: #f4f7fb;
+        }
+        header { background: #123a63; color: white; padding: 28px 7%; }
+        header h1 { margin: 0 0 6px; }
+        header p { margin: 0; }
+        nav { background: #0b2947; padding: 12px 7%; }
+        nav a { color: white; text-decoration: none; margin-right: 20px; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 1100px; margin: 24px auto; padding: 0 18px; }
+        section, article {
+            background: white; margin-bottom: 20px; padding: 22px;
+            border-radius: 10px; box-shadow: 0 2px 8px #12233a12;
+        }
+        h2 { color: #123a63; margin-top: 0; }
+        .hero { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+        .logo {
+            width: 110px; height: 110px; border-radius: 50%;
+            background: #e3efff; color: #123a63; display: grid;
+            place-items: center; font-weight: bold; font-size: 24px;
+            border: 3px solid #8bb7e8;
+        }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+        .card { border: 1px solid #dce5ef; padding: 15px; border-radius: 8px; background: #fbfdff; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; border: 1px solid #cbd5e1; padding: 10px; }
+        th { background: #e8f1fb; }
+        form { display: grid; gap: 12px; max-width: 600px; }
+        label { font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #b8c5d5; border-radius: 5px; font: inherit; }
+        button { background: #123a63; color: white; border: 0; padding: 11px 18px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #205487; }
+        footer { background: #0b2947; color: white; text-align: center; padding: 20px; }
+        footer a { color: #d5e8ff; }
+        @media (max-width: 600px) { nav a { display: inline-block; margin: 4px 12px 4px 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="logo" role="img" aria-label="CSE department logo illustration">CSE</div>
+            <div>
+                <h1>Department of Computer Science and Engineering</h1>
+                <p>Federal Institute of Science and Technology (FISAT)</p>
+                <p>Learning, innovation and technology</p>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#enquiry">Enquiry</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About the Department</h2>
+            <p>The Department of Computer Science and Engineering introduces students to computing,
+            software development, data systems and emerging technologies. It encourages problem-solving,
+            teamwork, practical learning and responsible use of technology.</p>
+            <p><strong>Our aim:</strong> to develop graduates with strong technical foundations and
+            the ability to apply computing concepts to real-world problems.</p>
+            <p><em>Note:</em> This is a sample academic website prepared for an HTML assignment.</p>
+        </section>
+
+        <section id="programmes">
+            <h2>Academic Programmes</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>B.Tech Computer Science and Engineering</h3>
+                    <p>An undergraduate programme covering programming, algorithms, networks,
+                    databases and software engineering.</p>
+                </article>
+                <article class="card">
+                    <h3>Project and Research Activities</h3>
+                    <p>Student teams explore practical problems through mini-projects, seminars,
+                    technical events and final-year projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="subjects">
+            <h2>Selected Subjects</h2>
+            <p>The following are examples of subjects commonly studied in a CSE programme:</p>
+            <ol>
+                <li>Programming in C</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management Systems</li>
+                <li>Computer Networks</li>
+                <li>Operating Systems</li>
+                <li>Web Programming</li>
+                <li>Artificial Intelligence</li>
+            </ol>
+        </section>
+
+        <section id="faculty">
+            <h2>Faculty Directory</h2>
+            <p>Illustrative sample entries for demonstrating an HTML table. Replace these with verified
+            department details before publishing.</p>
+            <table>
+                <thead>
+                    <tr><th>Name</th><th>Designation</th><th>Area of Specialization</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Dr. Anitha Menon</td><td>Professor</td><td>Artificial Intelligence</td></tr>
+                    <tr><td>Prof. Rahul Nair</td><td>Associate Professor</td><td>Computer Networks</td></tr>
+                    <tr><td>Dr. Meera Thomas</td><td>Assistant Professor</td><td>Data Science</td></tr>
+                    <tr><td>Prof. Arun Kumar</td><td>Assistant Professor</td><td>Database Systems</td></tr>
+                    <tr><td>Dr. Neha Joseph</td><td>Assistant Professor</td><td>Cybersecurity</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="facilities">
+            <h2>Facilities</h2>
+            <div class="cards">
+                <article class="card"><h3>Computer Laboratories</h3><p>Systems for programming practice and software development.</p></article>
+                <article class="card"><h3>Library and E-Resources</h3><p>Books, journals and digital learning resources.</p></article>
+                <article class="card"><h3>Project Workspace</h3><p>Space for collaboration, project demonstrations and peer learning.</p></article>
+            </div>
+        </section>
+
+        <section id="enquiry">
+            <h2>Student Enquiry Form</h2>
+            <p>Use this sample form to express interest in a programme. This HTML-only example displays
+            a form but does not send or store submissions.</p>
+            <form action="#" method="post" onsubmit="event.preventDefault(); alert('Sample form only: no data has been sent.');">
+                <div>
+                    <label for="student-name">Full Name</label>
+                    <input type="text" id="student-name" name="student_name" required>
+                </div>
+                <div>
+                    <label for="student-email">Email Address</label>
+                    <input type="email" id="student-email" name="student_email" required>
+                </div>
+                <div>
+                    <label for="student-phone">Phone Number</label>
+                    <input type="tel" id="student-phone" name="student_phone" pattern="[0-9+\-\s]{7,15}" required>
+                </div>
+                <div>
+                    <label for="course">Course Preference</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="btech-cse">B.Tech Computer Science and Engineering</option>
+                        <option value="project">Project / Research Enquiry</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Enquiry (optional)</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+
+        <section id="links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.fisat.ac.in/" target="_blank" rel="noopener noreferrer">FISAT Official Website</a></li>
+                <li><a href="#programmes">View Academic Programmes</a></li>
+                <li><a href="#faculty">View Faculty Directory</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Learning Guide</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p><strong>Department of Computer Science and Engineering</strong></p>
+        <p>Federal Institute of Science and Technology (FISAT), Kerala, India</p>
+        <p>Email: cse@example.edu | Phone: +91 00000 00000</p>
+        <p><a href="https://www.fisat.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a></p>
+        <p>&copy; 2026 Sample Department Website — Student HTML Assignment</p>
+    </footer>
+</body>
+</html>
